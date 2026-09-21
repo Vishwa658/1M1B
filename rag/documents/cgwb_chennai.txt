@@ -1,0 +1,36 @@
+AquaGuard AI Groundwater Knowledge
+
+The Central Ground Water Board monitors groundwater levels
+through a network of monitoring wells.
+
+Groundwater level is measured as depth below ground level.
+
+Groundwater levels depend on hydrogeological conditions,
+recharge and groundwater extraction.
+
+CGWB monitoring is conducted periodically.
+
+The national groundwater monitoring network includes
+monitoring wells and piezometers.
+
+Digital Water Level Recorders can provide more frequent
+measurements at selected stations.
+
+Groundwater information is shared through India's water
+information systems.
+
+For Chennai and coastal Tamil Nadu, CGWB has a Climate
+Response Monitoring Network that focuses on groundwater
+conditions and possible seawater intrusion.
+
+A groundwater observation station represents a specific
+well or piezometer. A station measurement should not
+automatically be treated as the groundwater level of every
+nearby ward.
+
+A ward-level dataset and a station-level dataset may
+represent different spatial and hydrogeological conditions.
+
+Groundwater depth must therefore be presented together
+with the measurement date, station or ward information,
+data source and limitations.

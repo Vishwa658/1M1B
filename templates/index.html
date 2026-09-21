@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AquaGuard AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header class="header">
+
+    <div class="header-content">
+
+        <h1>AquaGuard AI</h1>
+
+        <p>
+            AI-powered groundwater and water sustainability
+            platform for Chennai
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
+
+<main class="container">
+
+
+    <!-- =====================================================
+         AREA SEARCH
+         ===================================================== -->
+
+    <section class="card search-card">
+
+        <h2>Check Your Area</h2>
+
+        <p class="section-description">
+            Enter a Chennai locality to view available
+            groundwater information and responsible authorities.
+        </p>
+
+
+        <div class="input-group">
+
+            <label for="location">
+                Chennai Area
+            </label>
+
+            <input
+                id="location"
+                type="text"
+                placeholder="Example: Padi"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label for="issue">
+                Issue
+            </label>
+
+            <select id="issue">
+
+                <option value="groundwater">
+                    Groundwater
+                </option>
+
+                <option value="flood">
+                    Flood / Drainage
+                </option>
+
+                <option value="water">
+                    Water / Sewerage
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            class="primary-button"
+            onclick="analyzeArea()">
+
+            Check Area
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         AREA RESULT
+         ===================================================== -->
+
+    <section
+        id="result"
+        class="card result-card">
+    </section>
+
+
+
+    <!-- =====================================================
+         ASK AQUAGUARD
+         CHATGPT STYLE
+         ===================================================== -->
+
+    <section class="chat-section">
+
+        <div class="chat-header">
+
+            <h2>Ask AquaGuard</h2>
+
+            <p>
+                Ask questions about groundwater, rainfall,
+                Chennai, water sustainability and the environment.
+            </p>
+
+        </div>
+
+
+        <!-- Conversation area -->
+
+        <div
+            id="aquaguard-chat"
+            class="chat-conversation">
+
+        </div>
+
+
+        <!-- Input area -->
+
+        <div class="chat-input-area">
+
+            <textarea
+                id="aquaguard-question"
+                rows="1"
+                placeholder="Ask AquaGuard anything..."
+                onkeydown="handleChatKey(event, 'aquaguard')">
+            </textarea>
+
+            <button
+                class="send-button"
+                onclick="askAquaGuard()">
+
+                ➤
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GENERAL AI
+         CHATGPT STYLE
+         ===================================================== -->
+
+    <section class="chat-section">
+
+        <div class="chat-header">
+
+            <h2>Ask General Question</h2>
+
+            <p>
+                Ask general questions about AI, programming,
+                technology, science, education and other topics.
+            </p>
+
+        </div>
+
+
+        <!-- Conversation area -->
+
+        <div
+            id="general-chat"
+            class="chat-conversation">
+
+        </div>
+
+
+        <!-- Input area -->
+
+        <div class="chat-input-area">
+
+            <textarea
+                id="general-question"
+                rows="1"
+                placeholder="Ask a general question..."
+                onkeydown="handleChatKey(event, 'general')">
+            </textarea>
+
+            <button
+                class="send-button"
+                onclick="askGeneralQuestion()">
+
+                ➤
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<script
+    src="{{ url_for('static', filename='js/app.js') }}">
+</script>
+
+
+</body>
+
+</html>

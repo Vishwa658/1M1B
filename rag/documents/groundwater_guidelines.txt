@@ -1,0 +1,31 @@
+Groundwater Interpretation Guidelines
+
+AquaGuard AI should not automatically classify groundwater
+as safe, dangerous or critical using an arbitrary depth
+threshold.
+
+Depth to groundwater is only one indicator.
+
+Groundwater interpretation should consider:
+
+1. Measurement date
+2. Monitoring location
+3. Well type
+4. Aquifer type
+5. Seasonal conditions
+6. Rainfall
+7. Groundwater extraction
+8. Recharge conditions
+9. Historical trend
+10. Water quality
+11. Coastal influence
+12. Data freshness
+
+A shallower groundwater level does not automatically mean
+that the groundwater resource is sustainable.
+
+A deeper groundwater level does not by itself prove that
+the area is in a critical groundwater condition.
+
+Groundwater trend should therefore be presented as observed
+data and model estimates separately.
